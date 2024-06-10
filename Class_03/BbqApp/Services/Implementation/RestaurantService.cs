@@ -1,10 +1,15 @@
-﻿using ViewModels;
-using Services.Interfaces;
+﻿using DataAccess.Implementation;
 using DataAccess.Interfaces;
-using DataAccess.Implemetation;
 using DomainModels;
-namespace Services.Implementation
+using Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ViewModels;
 
+namespace Services.Implementation
 {
     public class RestaurantService : IRestaurantService
     {
@@ -14,26 +19,29 @@ namespace Services.Implementation
         {
             _restaurantRepository = new RestaurantRepository();
         }
+
         public RestaurantViewModel GetRestaurantDetails()
         {
             var restaurant = _restaurantRepository.GetAll().FirstOrDefault();
 
-            if (restaurant == null)
+            if(restaurant == null)
             {
                 throw new Exception("Restaurant not found!");
             }
+
             var restaurantViewModel = new RestaurantViewModel();
             restaurantViewModel.Id = restaurant.Id;
             restaurantViewModel.Name = restaurant.Name;
             restaurantViewModel.Menu = new List<MenuItemViewModel>();
 
-            foreach(var restaurantMenuItem in restaurant.Menu)
+
+            foreach(var restaurnatMenuItem in restaurant.Menu)
             {
                 var menuItem = new MenuItemViewModel();
-                menuItem.Id = restaurantMenuItem.Id; ;
-                menuItem.Name = restaurantMenuItem.Name;
-                menuItem.Description = restaurantMenuItem.Description;
-                menuItem.Price = restaurantMenuItem.Price;
+                menuItem.Id = restaurnatMenuItem.Id;
+                menuItem.Name = restaurnatMenuItem.Name;
+                menuItem.Description = restaurnatMenuItem.Description;
+                menuItem.Price = restaurnatMenuItem.Price;
 
                 restaurantViewModel.Menu.Add(menuItem);
             }

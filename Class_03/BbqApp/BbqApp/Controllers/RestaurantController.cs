@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Services.Interfaces;
 using Services.Implementation;
+using Services.Interfaces;
 
 namespace BbqApp.Controllers
 {
@@ -12,6 +12,7 @@ namespace BbqApp.Controllers
         {
             _restaurantService = new RestaurantService();
         }
+
         public IActionResult Index()
         {
             var result = _restaurantService.GetRestaurantDetails();

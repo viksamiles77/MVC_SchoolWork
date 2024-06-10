@@ -2,7 +2,7 @@
 {
     public class Restaurant : BaseClass
     {
-        public string RestaurantName { get; set; }
+        public string Name { get; set; }
         public List<MenuItem> Menu { get; set; }
     }
 }

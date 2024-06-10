@@ -1,6 +1,6 @@
-using ViewModels;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using ViewModels;
 
 namespace BbqApp.Controllers
 {
