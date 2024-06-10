@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_App_1", "Demo_App_1\Demo_App_1.csproj", "{0F04E246-8083-4770-BEAF-46AF51B6A5DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{E31A6F27-5170-45AF-8DB7-DAA21384849E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F04E246-8083-4770-BEAF-46AF51B6A5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F04E246-8083-4770-BEAF-46AF51B6A5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F04E246-8083-4770-BEAF-46AF51B6A5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F04E246-8083-4770-BEAF-46AF51B6A5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31A6F27-5170-45AF-8DB7-DAA21384849E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31A6F27-5170-45AF-8DB7-DAA21384849E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31A6F27-5170-45AF-8DB7-DAA21384849E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31A6F27-5170-45AF-8DB7-DAA21384849E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9864F17F-8687-479E-96B9-B3890A600CB6}
+	EndGlobalSection
+EndGlobal
